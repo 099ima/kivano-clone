@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Главная</h1>
+    <div class="container">
+        <h2>Новинки</h2>
+        {% for product in new_products %}
+            {{product.name}} <br>
+        {% endfor %}
+    </div>
+    <div class="container"> 
+        <h2>Хиты</h2>
+        {% for product in hit_products %}
+            {{product.name}} <br>
+        {% endfor %}
+    </div>
+</body>   
+</html>
